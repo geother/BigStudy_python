@@ -4,7 +4,7 @@ import requests
 import os
 from bs4 import BeautifulSoup
 
-laravelSession = os.getenv('cookie')
+laravelSession = os.getenv('COOKIE')
 UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x18001234) NetType/WIFI Language/zh_CN"
 loginUrl = "https://service.jiangsugqt.org/youth/lesson"
 confirmUrl = "https://service.jiangsugqt.org/youth/lesson/confirm"
@@ -24,7 +24,6 @@ headers = {
 getRes = session.get(url=loginUrl, headers=headers, params=params)
 
 if '抱歉，出错了' in getRes.text:
-    print(laravelSession)
     raise Exception("GET RE")
 
 
