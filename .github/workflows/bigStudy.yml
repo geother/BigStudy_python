@@ -1,11 +1,11 @@
-name: BigStudy
+name: bigStudy
 
 on:
   workflow_dispatch:
   push:
     branches:
       - master
-  
+
   schedule:
     - cron: '0 13 * * *'
 
@@ -24,5 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run Script
+        env:
+          cookie: ${{ secrets.cookie }}
         run: |
           python main.py
