@@ -24,7 +24,7 @@ headers = {
 getRes = session.get(url=loginUrl, headers=headers, params=params)
 
 if '抱歉，出错了' in getRes.text:
-    print("laravel_session错误")
+    print(laravelSession)
     raise Exception("GET RE")
 
 
