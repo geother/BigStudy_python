@@ -25,6 +25,6 @@ jobs:
           pip install -r requirements.txt
       - name: Run Script
         env:
-          cookie: ${{ secrets.COOKIE }}
+          COOKIE: ${{ secrets.cookie }}
         run: |
           python main.py
