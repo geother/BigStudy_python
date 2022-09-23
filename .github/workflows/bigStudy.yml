@@ -7,7 +7,7 @@ on:
       - master
 
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '0 13 * * 0'
 
 jobs:
   build:
@@ -26,5 +26,6 @@ jobs:
       - name: Run Script
         env:
           COOKIE: ${{ secrets.COOKIE }}
+          SEND_KEY: ${{ secrets.SEND_KEY }}
         run: |
           python main.py

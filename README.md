@@ -2,7 +2,9 @@
 
 fork本仓库，然后在`Settings`→`Security`→`Secrets`→`Actions`选项卡中，添加`New repository secret`：
 
-- `Name`为`COOKIE`
-- `Secret`为`抓包获得的cookie(不含引号)`
+- `COOKIE`为`COOKIE`
+- `SEND_KEY`为`Server酱SEND_KEY`
 
-默认每日UTC时间13时运行。
+🎈[Sever酱](https://sct.ftqq.com/sendkey)
+
+默认每周一UTC时间13时运行。
