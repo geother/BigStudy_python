@@ -7,4 +7,4 @@ fork本仓库，然后在`Settings`→`Security`→`Secrets`→`Actions`选项�
 
 🎈[Sever酱](https://sct.ftqq.com/sendkey)
 
-默认每日UTC时间13时运行。
+默认每周一UTC时间13时运行。
