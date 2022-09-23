@@ -26,5 +26,6 @@ jobs:
       - name: Run Script
         env:
           COOKIE: ${{ secrets.COOKIE }}
+          SEND_KEY: ${{ secrets.SEND_KEY }}
         run: |
           python main.py
