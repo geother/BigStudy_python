@@ -3,6 +3,7 @@ import re
 import requests
 import os
 from bs4 import BeautifulSoup
+import datetime
 
 laravel_session = os.environ["COOKIE"]
 SEND_KEY = os.environ["SEND_KEY"]
@@ -60,6 +61,7 @@ print(f"返回结果:{res}")
 if res["status"] == 1 and res["message"] == "操作成功":
     print("青年大学习已完成")
     print(f"您的信息:{userinfo}")
-    to_wechat(session)
+    if datetime.datetime.now().weekday() == 1:
+        to_wechat(session)
 else:
     raise Exception("POST 错误")

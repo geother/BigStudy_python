@@ -7,4 +7,4 @@ fork本仓库，然后在`Settings`→`Security`→`Secrets`→`Actions`选项�
 
 🎈[Sever酱](https://sct.ftqq.com/sendkey)
 
-默认每周一UTC时间13时运行。
+默认每天UTC时间13时运行，每周一向微信推送结果。（[yuzaii](https://github.com/yuzaii)指出每天都执行脚本，则laravel_session不会改变）
