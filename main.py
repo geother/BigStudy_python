@@ -60,8 +60,9 @@ res = json.loads(session.post(url=confirmUrl, params=params).text)
 print(f"返回结果:{res}")
 if res["status"] == 1 and res["message"] == "操作成功":
     print("青年大学习已完成")
-    print(f"您的信息:{userinfo}")
-    if datetime.datetime.now().weekday() == 1:
+    # github action 中会泄露个人隐私信息
+    # print(f"您的信息:{userinfo}")
+    if datetime.datetime.now().weekday() == 0:
         to_wechat(session)
 else:
     raise Exception("POST 错误")
